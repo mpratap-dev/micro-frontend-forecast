@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import singleSpaVue from 'single-spa-vue';
-
+import router from './router';
 import App from './App.vue';
 
 Vue.config.productionTip = false;
@@ -22,6 +22,7 @@ const vueLifecycles = singleSpaVue({
         },
       });
     },
+    router
   },
 });
 
